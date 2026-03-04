@@ -42,14 +42,6 @@ function M.setup(opts)
     vim.keymap.set("v", "i", "<Esc>`<i")
     vim.keymap.set("v", "a", "<Esc>`>a")
 
-    vim.keymap.set("v", "n", "<Esc>nviw")
-    vim.keymap.set("v", "N", "<Esc>nviw")
-
-    vim.keymap.set("n", "n", function () fn.search_and_select() end)
-    vim.keymap.set("n", "N", function () fn.search_and_select() end)
-
-    vim.keymap.set("n", "*", function () fn.search_and_select() end)
-    vim.keymap.set("v", "*", function () fn.search_and_select() end)
 end
 
 return M
