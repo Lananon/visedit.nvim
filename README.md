@@ -8,4 +8,4 @@ designed not to replace nvims default motions, but to incentivize the use of vis
 ```return {
   "Lananon/visedit.nvim",
   opts = {}
-}```
+}
