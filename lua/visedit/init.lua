@@ -45,14 +45,14 @@ function M.setup(opts)
     vim.keymap.set("n", "<C-j>", ")")
     vim.keymap.set("n", "<C-k>", "(")
 
-    vim.keymap.set("n", "<C-S-J>", "v)")
-    vim.keymap.set("n", "<C-S-K>", "v(")
+    vim.keymap.set("n", "<C-S-j>", "v)")
+    vim.keymap.set("n", "<C-S-k>", "v(")
 
     vim.keymap.set("v", "<C-j>", ")")
     vim.keymap.set("v", "<C-k>", "(")
 
-    vim.keymap.set("v", "<C-S-J>", ")")
-    vim.keymap.set("v", "<C-S-K>", "(")
+    vim.keymap.set("v", "<C-S-j>", ")")
+    vim.keymap.set("v", "<C-S-k>", "(")
 end
 
 return M
