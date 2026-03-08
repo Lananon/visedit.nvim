@@ -42,6 +42,9 @@ function M.setup(opts)
     vim.keymap.set("v", "i", "<Esc>`<i")
     vim.keymap.set("v", "a", "<Esc>`>a")
 
+    vim.keymap.set("n", "<C-j>", ")")
+    vim.keymap.set("n", "<C-k>", "(")
+
 end
 
 return M
