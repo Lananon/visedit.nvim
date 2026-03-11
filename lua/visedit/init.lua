@@ -39,8 +39,6 @@ function M.setup(opts)
     vim.keymap.set("n", "V", function () fn.select_line(vim.v.count1) end)
     vim.keymap.set("v", "V", function () fn.select_line(vim.v.count1) end)
     -- keybinds to improve parity between visual and normal modes
-    vim.keymap.set("v", "i", "<Esc>`<i")
-    vim.keymap.set("v", "a", "<Esc>`>a")
 
     vim.keymap.set("n", "<C-j>", ")")
     vim.keymap.set("n", "<C-k>", "(")
