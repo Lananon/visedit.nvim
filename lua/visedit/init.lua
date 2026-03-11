@@ -24,14 +24,17 @@ function M.setup(opts)
     if opts.use_vis_movement then
         vim.keymap.set("n", "w", function () fn.next_word(vim.v.count1) end)
         vim.keymap.set("v", "w", function () fn.next_word(vim.v.count1) end)
-        vim.keymap.set("v", "W", "w")
-        vim.keymap.set("n", "W", "vw")
 
         vim.keymap.set("n", "b", function () fn.prev_word(vim.v.count1) end)
         vim.keymap.set("v", "b", function () fn.prev_word(vim.v.count1) end)
-        vim.keymap.set("v", "B", "b")
-        vim.keymap.set("n", "B", "vb")
     end
+
+    vim.keymap.set("v", "W", "w")
+    vim.keymap.set("n", "W", "vw")
+    vim.keymap.set("v", "B", "b")
+    vim.keymap.set("n", "B", "vb")
+    vim.keymap.set("v", "E", "e")
+    vim.keymap.set("n", "E", "ve")
 
     vim.keymap.set("n", "V", function () fn.select_line(vim.v.count1) end)
     vim.keymap.set("v", "V", function () fn.select_line(vim.v.count1) end)
